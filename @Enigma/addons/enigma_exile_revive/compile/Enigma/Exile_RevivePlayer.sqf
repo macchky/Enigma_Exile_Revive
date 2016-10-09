@@ -126,7 +126,7 @@ if (!local _requestingPlayer) then
 			_requestingPlayer setVariable ["ExileMoney", 0];
 
 			//move deadplayer far far away!
-			_requestingPlayer setpos [0,0,0];
+			//_requestingPlayer setpos [0,0,0];
 
 			_accountData = format["getAccountStats:%1", _requestingPlayerUID] call ExileServer_system_database_query_selectSingle;
 			_group = createGroup independent;
